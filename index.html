@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe2.0</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        #log{
+            margin-top: 12px;
+        }
+        
+        #login{
+            border-radius: 10px;
+        }
+        #text{
+            position: relative;
+        }
+        #bg_text{
+            bottom: 320px;
+            position: absolute;
+            left: 36%;
+            letter-spacing: 3px;
+        }
+        .bor{
+            border-radius: 30px;
+        }
+        .overlay{
+            position: relative;
+        }
+        .overlay-text{
+            position: absolute;
+            top: 40%;
+            left: 36%;
+            text-decoration: underline;
+            font-weight: bold;
+            display: none;
+        }
+        .overlay:hover .overlay-text{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="container center-on-small-only">
+                    <div class="row">
+                        <div class="col l3">
+                            <img src="img/logo.png" alt="" class="responsive-img left" style="max-width: 150px;">
+                        </div>
+                        <div class="col l6 left">
+                            <ul class="right hide-on-med-and-down">
+                                <li><a href="# " class="orange-text text-darken-4 scrollspy">Who We Are</a></li>
+                                <li><a href="# " class="orange-text text-darken-4 scrollspy">Find a Recipe</a></li>
+                                <li><a href="# " class="orange-text text-darken-4 scrollspy">Our Reviews</a></li>
+                                <li><a href="# " class="orange-text text-darken-4 scrollspy">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col l3" id="log">
+                            <a href="index.html" class="btn orange darken-4 right" id="login">Login</a>
+                        </div>
+                        <a href="#sidenav " class="sidenav-trigger">
+                            <i class="material-icons orange-text text-darken-4">menu</i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="text" class="hide-on-small-only">
+            <video src="img/header-bg-vid.mp4" class="responsive-video" id="bg_vid" autoplay width="100%"></video>
+            <div id="bg_text">
+                <h2 class="white-text center-align">Every Dish Tells a <br> Story.</h2>
+            <h5 class="white-text center-align">Explore, cook, and create with us.</h5>
+            <center><a href="" class="btn orange darken-4">Get Started</a></center>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col l6">
+                    <h4>Start your culinary <br>journey <span class="orange-text text-darken-4">today.</span></h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quas labore praesentium dignissimos officia aliquid maiores voluptas excepturi tenetur odio!</p>
+                    <a href="" class="btn orange darken-4">Start Your Journey</a>
+                </div>
+                <div class="col l6">
+                    <img src="img/spagetti.png" alt="" class="responsive-img" height="200px">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h4 class="center">Select a <span class="orange-text text-darken-4">category.</span></h4>
+            <div class="row">
+                <div class="col s12 l4 overlay">
+                    <img src="img/cake-main.jpg" alt="" class="responsive-img bor">
+                    <span class="white-text overlay-text">Cakes</span>
+                </div>
+                <div class="col s12 l4 overlay">
+                    <img src="img/chicken-main.jpg" alt="" class="bor responsive-img">
+                    <span class="white-text overlay-text">Chickens</span>    
+                </div>
+                <div class="col s12 l4 overlay">
+                    <img src="img/soup-main.jpg" alt="" class="responsive-img bor">
+                    <span class="white-text overlay-text">Soups</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--    Javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $('.sidenav').sidenav();
+        $('.slider').slider({
+            interval: 5000,
+            height: 500,
+        });
+        $('.collapsible').collapsible();
+        $('.parallax').parallax();
+        $('.materialboxed').materialbox();
+        $('.scrollspy').scrollSpy();
+        $('.fixed-action-btn').floatingActionButton();
+    </script>
+</body>
+</html>
