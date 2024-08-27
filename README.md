@@ -1,7 +1,7 @@
 # Recipe.com
 
 This is the repo for my Recipe.com project.
-[Visit Website](https://kingcelesto.github.io/recipe/)
+[Visit Website](https://kingcelesto.github.io/recipe2.0/)
 
 ![Logo](./img/logo.png)
 
@@ -12,7 +12,7 @@ This is a demo recipe website made with Materialize-CSS and HTML.
 ## Getting Started
 
 You can clone or download this repository to your local machine using the link below:
-[Recipe](https://github.com/KingCelesto/recipe)
+[Recipe](https://github.com/KingCelesto/recipe2.0)
 
 ## Built With
 
